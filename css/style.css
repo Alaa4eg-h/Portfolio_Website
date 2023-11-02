@@ -8,6 +8,21 @@
     list-style: none;
 }
 
+img{
+    display: block;
+    width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+section {
+    padding: 8rem 0;
+}
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -15,7 +30,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #999;
     font-size: 1rem;
     line-height: normal;
 }
@@ -26,7 +41,6 @@ body {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
 
 
 
@@ -109,7 +123,43 @@ body {
     color: #e03131;
 }
 
-.header__image img{
-    display: block;
-    width: 100%;
+
+
+/*END HEADER*/
+/*START ABOUT*/
+.about {
+    background-color: #000;
+}
+.about__container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 6rem;
+}
+
+.about__right h2 {
+    color: #fff;
+    font-size: 4.4rem;
+}
+
+.about__control {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.about__control span {
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.about__control span::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #e03131;
 }
