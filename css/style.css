@@ -33,6 +33,7 @@ body {
     color: #999;
     font-size: 1rem;
     line-height: normal;
+    background-color: #000;
 }
 
 /*HELPER CLASSES*/
@@ -42,7 +43,12 @@ body {
     padding: 0 1.5rem;
 }
 
-
+.section__heading {
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4rem;
+}
 
 
 /*START HEADER*/
@@ -91,7 +97,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #e03131;
+    background-color: #f03e3e;
     transition: all 0.3s;
 }
 
@@ -120,16 +126,13 @@ body {
     letter-spacing: 1px;
 }
 .header__text span {
-    color: #e03131;
+    color: #f03e3e;
 }
 
 
 
 /*END HEADER*/
 /*START ABOUT*/
-.about {
-    background-color: #000;
-}
 .about__container {
     display: grid;
     grid-template-columns: 450px 1fr;
@@ -141,25 +144,102 @@ body {
     font-size: 4.4rem;
 }
 
-.about__control {
+.tab__box {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 4rem;
 }
 
-.about__control span {
+.tab__box .tab__btn {
     font-size: 1.6rem;
     cursor: pointer;
     display: inline-block;
     position: relative;
 }
-.about__control span::after {
+.tab__box .tab__btn::after {
     content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 50%;
+    width: 0;
     height: 3px;
     background-color: #e03131;
+    transition: all 0.3s ;
 }
+
+.tab__box .tab__btn.btn--active::after {
+    width: 50%;
+}
+.tab__content {
+    display: none;
+}
+
+.tab__content.active {
+    display: block;
+    animation: moving 0.3s;
+}
+
+@keyframes moving {
+    from{
+       transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform : translateX(0);
+        opacity: 1;
+    }
+}
+.tab__content span {
+    color: #f03e3e;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.tab__content p {
+    margin-bottom: 1.5rem;
+}
+
+/*END ABOUT*/
+
+/*START SERVICES*/
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.service {
+    padding: 2rem 4rem;
+    background-color: #212529;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.service:hover {
+    background-color: #f03e3e;
+    transform:translateY(-10px);
+}
+
+.ser__icon {
+    font-size: 6rem;
+    margin-bottom: 1.6rem;
+}
+
+.service h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+}
+.service p {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.service a {
+    color: #fff;
+}
+/*END SERVICES*/
+

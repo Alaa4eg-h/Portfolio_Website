@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--ICON-SCOUT-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Portfolio Website | HTML CSS JS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,38 +45,111 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, amet blanditiis consequatur eaque eos
                 facilis itaque modi nisi nobis officiis pariatur quis sunt temporibus voluptatem?</p>
 
-            <div class="about__control">
-                <span>Skills</span>
-                <span>Experience</span>
-                <span>Education</span>
+            <div class="tab__box">
+                <span class="tab__btn btn--active">Skills</span>
+                <span class="tab__btn">Experience</span>
+                <span class="tab__btn">Education</span>
             </div>
-            <div class="about__data">
+            <div class="tab__content active">
                 <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
+                <p>Designing Web/App Interacts</p>
                 <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
+                <p>Designing Web/App Interacts</p>
                 <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
+                <p>Designing Web/App Interacts</p>
             </div>
-            <div class="about__data">
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
+            <div class="tab__content">
+                <span>2021 - Current</span>
+                <p>UI/UX Design Training at ET institute</p>
+                <span>2019 - 2021</span>
+                <p>Team Lead at StartApp LLC</p>
+                <span>2017 - 2019</span>
+                <p>UI/UX Design Executive at Coin Digital LTD</p>
+                <span>2016 - 2017</span>
+                <p>Internship at ekart eCommerce</p>
             </div>
-            <div class="about__data">
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
-                <span>UI/UX</span>
-                <h4>Designing Web/App Interacts</h4>
+            <div class="tab__content">
+                <span>2018</span>
+                <p>UI/UX Design Training at ET institute</p>
+                <span>2016</span>
+                <p>MBA From Mit Bangalore</p>
+                <span>2014</span>
+                <p>BBA From ISM Bangalore</p>
             </div>
         </div>
     </div>
 </section>
 <!--END ABOUT-->
+
+<!--START SERVICES-->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section__heading">My Services</h2>
+    </div>
+    <div class="container services__container">
+        <div class="service">
+            <i class="uil uil-arrow ser__icon"></i>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta dolor nostrum quae, rerum
+                temporibus.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="service">
+            <i class="uil uil-crop-alt ser__icon"></i>
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta dolor nostrum quae, rerum
+                temporibus.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="service">
+            <i class="uil uil-object-group ser__icon"></i>
+            <h3>App Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta dolor nostrum quae, rerum
+                temporibus.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</section>
+<!--END SERVICES-->
+
+<!--START WORK-->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="section__heading">My Work</h2>
+    </div>
+    <div class="container services__container">
+        <div class="portfolio__item">
+            <img src="images/work-1.png" alt="" class="portfolio__img">
+            <div class="portfolio__overlay">
+                <h4>Social Media App</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloribus eius eos magni, nostrum
+                    officiis.</p>
+                <i class="uil uil-external-link-alt portfolio__icon"></i>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="images/work-1.png" alt="" class="portfolio__img">
+            <div class="portfolio__overlay">
+                <h4>Social Media App</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloribus eius eos magni, nostrum
+                    officiis.</p>
+                <i class="uil uil-external-link-alt portfolio__icon"></i>
+            </div>
+        </div>
+        <div class="portfolio__item">
+            <img src="images/work-1.png" alt="" class="portfolio__img">
+            <div class="portfolio__overlay">
+                <h4>Social Media App</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloribus eius eos magni, nostrum
+                    officiis.</p>
+                <i class="uil uil-external-link-alt portfolio__icon"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--END WORK-->
+
+<script src="js/main.js"></script>
 </body>
 </html>
